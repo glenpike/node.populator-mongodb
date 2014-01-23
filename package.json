@@ -1,7 +1,7 @@
 {
   "name": "node.populator-mongodb",
   "preferGlobal": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "SAS 9 Février <contact@9fevrier.com>",
   "description": "A simple library used to populate a MongoDB database with native driver. Usefull for unit tests.",
   "main": "lib/populator-mongodb.js",
