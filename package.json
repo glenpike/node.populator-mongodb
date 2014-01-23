@@ -1,0 +1,28 @@
+{
+  "name": "node.populator-mongodb",
+  "preferGlobal": false,
+  "version": "0.0.1",
+  "author": "SAS 9 Février <contact@9fevrier.com>",
+  "description": "A simple library used to populate a MongoDB database with native driver. Usefull for unit tests.",
+  "main": "lib/populator-mongodb.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/9fevrier/node.populator-mongodb.git"
+  },
+  "keywords": [
+    "database", "populate", "unit test", "mongodb", "unit", "test"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.6"
+  },
+  "dependencies": {
+      "mongodb": "*",
+      "async": "*",
+	  "log4js": "*"
+  },
+  "devDependencies": {
+      "mocha": ">= 1.12.0"
+  }
+}
+
