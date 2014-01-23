@@ -53,8 +53,8 @@ module.exports = {
 'use strict;';
 
 var data = require('testing-data'),
-    populator = require('node.populator-mongodb'),
-	CustomerService = require('customer-service');
+    PopulatorMongoDB = require('node.populator-mongodb'),
+    CustomerService = require('customer-service');
 
 var customerService = new CustomerService();
 
@@ -70,7 +70,7 @@ describe('Customers test', function () {
      */
     beforeEach(function (done) {
         this.timeout(3000);
-        var populator = new DbPopulator(dbUri, data);
+        var populator = new PopulatorMongoDB(dbUri, data);
         populator.populate(done);
     });
 
@@ -94,6 +94,28 @@ describe('Customers test', function () {
 
 ```
 mocha
+```
+
+### Example in real life
+
+See unit tests of [node.generic-dao-mongoose](https://github.com/9fevrier/node.generic-dao-mongoose.git "A generic data access layer for Node+MongoDB projects using Mongoose.") project. 
+
+```
+# Clone the project...
+git clone https://github.com/9fevrier/node.generic-dao-mongoose.git
+
+# Install dependencies...
+cd node.generic-dao-mongoose/
+npm install
+
+# Then run unit tests...
+mocha
+
+# And view the results !
+>  .......
+> 7 passing (272ms) 
+>
+
 ```
 
 ## License
