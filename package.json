@@ -10,19 +10,24 @@
     "url": "https://github.com/9fevrier/node.populator-mongodb.git"
   },
   "keywords": [
-    "database", "populate", "unit test", "mongodb", "unit", "test"
+    "database",
+    "populate",
+    "unit test",
+    "mongodb",
+    "unit",
+    "test"
   ],
   "license": "MIT",
   "engines": {
     "node": ">=0.6"
   },
   "dependencies": {
-      "mongodb": "*",
-      "async": "*",
-	  "log4js": "*"
+    "async": "*",
+    "js.augment": "0.0.1",
+    "log4js": "*",
+    "mongodb": "*"
   },
   "devDependencies": {
-      "mocha": ">= 1.12.0"
+    "mocha": ">= 1.12.0"
   }
 }
-
