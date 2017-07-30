@@ -47,7 +47,7 @@ module.exports = {
 
 ### Create unit test
 
-* We'll use [mocha](http://visionmedia.github.io/mocha/ "Mocha test framework") to run unit tests.
+* We'll use [mocha](http://mochajs.org/ "Mocha test framework") to run unit tests.
 
 ```javascript
 'use strict;';
